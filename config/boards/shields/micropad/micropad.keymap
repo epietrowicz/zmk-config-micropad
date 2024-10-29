@@ -26,12 +26,13 @@
     };
 
     keymap {
-        encoder_0 {
-            compatible = "zmk,encoder";
-            label = "Volume Encoder";
-            binding-cw = <&enc_cw>;
-            binding-ccw = <&enc_ccw>;
-            binding-press = <&enc_press>;
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &enc_press
+            >;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
     };
 };

@@ -8,9 +8,23 @@
         label = "default_kscan";
 
         input-gpios =
-            <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&xiao_d 9 (GPIO_OUTPUT_INIT_LOW)>,
-            <&xiao_d 5 (GPIO_OUTPUT_INIT_LOW)>;
+            <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    };
+
+    gpio_nodes {
+        compatible = "gpio";
+        
+        sw_pin_gnd: sw_pin_gnd {
+            gpios = <&xiao_d 9 GPIO_OUTPUT_INIT_LOW>;
+            label = "Output Low Pin";
+            status = "okay";
+        };
+
+        enc_pin_gnd: enc_pin_gnd {
+            gpios = <&xiao_d 5 GPIO_OUTPUT_INIT_LOW>;
+            label = "Output Low Pin";
+            status = "okay";
+        };
     };
 
     left_encoder: encoder_left {

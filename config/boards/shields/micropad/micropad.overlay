@@ -15,14 +15,14 @@
         compatible = "gpio";
         
         sw_pin_gnd: sw_pin_gnd {
-            gpios = <&xiao_d 9 GPIO_OUTPUT_INIT_LOW>;
-            label = "Output Low Pin";
+            gpios = <&xiao_d 9 (GPIO_OUTPUT_INIT_LOW)>;
+            label = "SwitchGndPin";
             status = "okay";
         };
 
         enc_pin_gnd: enc_pin_gnd {
-            gpios = <&xiao_d 5 GPIO_OUTPUT_INIT_LOW>;
-            label = "Output Low Pin";
+            gpios = <&xiao_d 5 (GPIO_OUTPUT_INIT_LOW)>;
+            label = "EncoderGndPin";
             status = "okay";
         };
     };

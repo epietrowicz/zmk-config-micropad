@@ -21,7 +21,7 @@
             compatible = "zmk,behavior-tap-hold";
             label = "Play/Pause or Clear Bluetooth";
             bindings = <&kp C_PLAY_PAUSE>, <&bt CLR>;
-            tapping-term-ms = <500>;
+            #binding-hold-tap-time-ms = <500>;  // Correcting this property for ZMK compatibility
         };
     };
 

@@ -5,18 +5,6 @@
 
 / {
     behaviors {
-        enc_ccw: encoder_ccw {
-            compatible = "zmk,behavior-encoder";
-            label = "Volume Down";
-            bindings = <&kp VOL_DN>;
-        };
-
-        enc_cw: encoder_cw {
-            compatible = "zmk,behavior-encoder";
-            label = "Volume Up";
-            bindings = <&kp VOL_UP>;
-        };
-
        enc_press: encoder_press {
             compatible = "zmk,behavior-tap-hold";
             label = "Play/Pause or Clear Bluetooth";

@@ -1,6 +1,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+        bindings = <&bt BT_CLR>;
         default_layer {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };

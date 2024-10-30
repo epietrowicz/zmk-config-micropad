@@ -4,7 +4,7 @@
 
 / {
     behaviors {
-        enc_press: encoder_press {
+        press: enc_press {
             compatible = "zmk,behavior-tap-hold";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -17,7 +17,7 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <&enc_press UP DOWN>;
+            bindings = <&press UP DOWN>;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };

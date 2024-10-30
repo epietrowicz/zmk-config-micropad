@@ -6,7 +6,7 @@
     behaviors {
         press: enc_press {
             compatible = "zmk,behavior-tap-hold";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;

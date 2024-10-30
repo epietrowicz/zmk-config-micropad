@@ -7,7 +7,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <&kp UP>;
-            sensor-bindings = <&kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
     };
 };

@@ -17,7 +17,9 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <&ep C_VOL_UP C_VOL_DOWN>;
+            bindings = <
+                &ep J k
+            >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };

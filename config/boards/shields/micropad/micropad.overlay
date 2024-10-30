@@ -22,3 +22,12 @@
         sensors = <&left_encoder>;
     };
 };
+
+&gpio0 {
+    swgnd: switch-gnd-pin {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>;
+        output-low;
+        line-name = "Switch GND Pin";
+    };
+}

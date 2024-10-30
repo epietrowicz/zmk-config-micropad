@@ -3,10 +3,17 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        enc_press: encoder_press {
+            compatible = "zmk,behavior-tap-hold";
+            bindings = <&kp C_PLAY_PAUSE>, <&bt CLR>;
+            tapping-term-ms = <500>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <&hold_tap &kp C_PLAY_PAUSE &bt BT_CLR>;
+            bindings = <&enc_press>;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };

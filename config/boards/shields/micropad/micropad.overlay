@@ -11,9 +11,9 @@
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
-        a-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-        b-gpios = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-        steps = <80>;
+        a-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
         status = "okay";
     };
 
@@ -26,13 +26,13 @@
 &gpio0 {
     swgnd: switch-gnd-pin {
         gpio-hog;
-        gpios = <46 GPIO_ACTIVE_HIGH>;
+        gpios = <5 GPIO_ACTIVE_LOW>;
         output-low;
         line-name = "Switch GND Pin";
     };
     encgnd: encoder-gnd-pin {
         gpio-hog;
-        gpios = <46 GPIO_ACTIVE_HIGH>;
+        gpios = <46 GPIO_ACTIVE_LOW>;
         output-low;
         line-name = "Encoder GND Pin";
     };

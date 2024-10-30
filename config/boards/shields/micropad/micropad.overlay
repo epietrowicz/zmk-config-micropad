@@ -32,8 +32,8 @@
     };
     encgnd: encoder-gnd-pin {
         gpio-hog;
-        gpios = <46 GPIO_ACTIVE_LOW>;
-        output-low;
+        gpios = <46 GPIO_PULL_DOWN>;
+        // output-low;
         line-name = "Encoder GND Pin";
     };
 };

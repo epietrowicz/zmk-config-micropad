@@ -3,13 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        bt_clear: bluetooth_clear {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &bt BT_CLR>;
-        };
-    };
     behaviors {
         enc_press: encoder_press {
             compatible = "zmk,behavior-tap-hold";

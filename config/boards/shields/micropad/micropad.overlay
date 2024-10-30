@@ -32,7 +32,7 @@
     };
     encgnd: encoder-gnd-pin {
         gpio-hog;
-        gpios = <46 GPIO_ACTIVE_HIGH>;
+        gpios = <&xiao_d 9 GPIO_ACTIVE_HIGH>;
         output-low;
         line-name = "Encoder GND Pin";
     };

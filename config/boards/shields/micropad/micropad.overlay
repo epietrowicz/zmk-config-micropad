@@ -30,4 +30,4 @@
         output-low;
         line-name = "Switch GND Pin";
     };
-}
+};

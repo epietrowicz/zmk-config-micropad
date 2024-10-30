@@ -39,4 +39,4 @@
         output-low;
         line-name = "Encoder GND Pin";
     };
-}
+};

@@ -11,7 +11,7 @@
         };
     };
     behaviors {
-        ep: enc_press {
+        enc_p: enc_press {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&bt_clear>, <&kp>;
             #binding-cells = <2>;
@@ -23,7 +23,7 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <&ep 0 k>;
+            bindings = <&enc_p 0 k>;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };

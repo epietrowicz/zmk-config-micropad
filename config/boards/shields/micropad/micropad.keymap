@@ -18,13 +18,13 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
-            bindings = <&kp>, <&bt_clear>;
+            bindings = <&kp C_PLAY_PAUSE>, <&bt_clear>;
         };
     };
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <&enc_press C_PLAY_PAUSE 0>;
+            bindings = <&enc_press 0>;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };

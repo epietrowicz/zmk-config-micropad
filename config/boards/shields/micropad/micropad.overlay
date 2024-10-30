@@ -26,7 +26,7 @@
 &gpio0 {
     swgnd: switch-gnd-pin {
         gpio-hog;
-        gpios = <5 GPIO_ACTIVE_HIGH>;
+        gpios = <46 GPIO_ACTIVE_HIGH>;
         output-low;
         line-name = "Switch GND Pin";
     };

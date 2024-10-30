@@ -30,10 +30,13 @@
         output-low;
         line-name = "Switch GND Pin";
     };
+};
+
+&gpio1 {
     encgnd: encoder-gnd-pin {
         gpio-hog;
-        gpios = <&gpio1 14 GPIO_ACTIVE_HIGH>;
+        gpios = <14 GPIO_ACTIVE_HIGH>;
         output-low;
         line-name = "Encoder GND Pin";
     };
-};
+}

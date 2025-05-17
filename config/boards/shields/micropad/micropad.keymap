@@ -23,7 +23,7 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <&enc_p 0 C_PLAY_PAUSE>;
+            bindings = <&studio_unlock>;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
